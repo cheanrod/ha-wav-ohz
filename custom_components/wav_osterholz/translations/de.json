@@ -1,0 +1,70 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "WAV Osterholz",
+        "description": "Die Wasser- und Abwassergebühren werden je Gemeinde unter {url} veröffentlicht. Wählen Sie Ihre Gemeinde und die Größe Ihres Wasserzählers (auf dem Zähler als QN bzw. Q3 angegeben).",
+        "data": {
+          "municipality": "Gemeinde",
+          "meter_size": "Wasserzählergröße"
+        },
+        "data_description": {
+          "municipality": "Der WAV liefert Trinkwasser in allen Gemeinden außer Lilienthal und Osterholz-Scharmbeck – dort ist er nur für das Abwasser zuständig.",
+          "meter_size": "Bestimmt die monatlichen Grundgebühren. Ein normales Einfamilienhaus hat einen Zähler bis QN 2,5 (Q3/4)."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Die Gebührenseite des WAV Osterholz ist nicht erreichbar.",
+      "cannot_parse": "Die Gebührenseite wurde geladen, es konnten aber keine Gebühren ausgelesen werden.",
+      "unknown": "Unerwarteter Fehler"
+    },
+    "abort": {
+      "already_configured": "Diese Gemeinde ist bereits eingerichtet."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "WAV Osterholz Optionen",
+        "data": {
+          "meter_size": "Wasserzählergröße"
+        },
+        "data_description": {
+          "meter_size": "Bestimmt die monatlichen Grundgebühren."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "water_price": {
+        "name": "Trinkwasserpreis"
+      },
+      "water_base_fee": {
+        "name": "Trinkwasser-Grundgebühr"
+      },
+      "submeter_base_fee": {
+        "name": "Gartenwasserzähler-Grundgebühr"
+      },
+      "wastewater_price": {
+        "name": "Abwasserpreis"
+      },
+      "wastewater_base_fee": {
+        "name": "Abwasser-Grundgebühr"
+      },
+      "total_price": {
+        "name": "Wasserpreis gesamt"
+      },
+      "total_base_fee": {
+        "name": "Grundgebühr gesamt"
+      },
+      "septic_pit_price": {
+        "name": "Fäkalschlamm abflusslose Gruben"
+      },
+      "septic_plant_price": {
+        "name": "Fäkalschlamm Hauskläranlagen"
+      }
+    }
+  }
+}

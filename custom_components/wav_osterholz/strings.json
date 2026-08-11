@@ -1,0 +1,70 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "WAV Osterholz",
+        "description": "Water and wastewater fees are published per municipality at {url}. Choose your municipality and the size of your water meter (shown on the meter itself as QN or Q3).",
+        "data": {
+          "municipality": "Municipality",
+          "meter_size": "Water meter size"
+        },
+        "data_description": {
+          "municipality": "The WAV supplies drinking water everywhere except Lilienthal and Osterholz-Scharmbeck, where it only handles wastewater.",
+          "meter_size": "Determines the monthly base fees. A normal single-family home has a QN 2.5 (Q3/4) meter."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to reach the WAV Osterholz fee page.",
+      "cannot_parse": "The fee page was reached but no fees could be read from it.",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This municipality is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "WAV Osterholz options",
+        "data": {
+          "meter_size": "Water meter size"
+        },
+        "data_description": {
+          "meter_size": "Determines the monthly base fees."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "water_price": {
+        "name": "Drinking water price"
+      },
+      "water_base_fee": {
+        "name": "Drinking water base fee"
+      },
+      "submeter_base_fee": {
+        "name": "Garden water meter base fee"
+      },
+      "wastewater_price": {
+        "name": "Wastewater price"
+      },
+      "wastewater_base_fee": {
+        "name": "Wastewater base fee"
+      },
+      "total_price": {
+        "name": "Total water price"
+      },
+      "total_base_fee": {
+        "name": "Total base fee"
+      },
+      "septic_pit_price": {
+        "name": "Septic pit disposal price"
+      },
+      "septic_plant_price": {
+        "name": "Septic treatment plant disposal price"
+      }
+    }
+  }
+}
