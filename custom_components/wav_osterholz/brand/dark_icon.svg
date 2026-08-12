@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Water drop with measured fill level">
+  <defs>
+    <clipPath id="drop">
+      <path d="M128 14 C128 70 208 106 208 160 A80 80 0 1 1 48 160 C48 106 128 70 128 14 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#drop)">
+    <rect x="0" y="0" width="256" height="171" fill="#A9C6EA"/>
+    <rect x="0" y="179" width="256" height="77" fill="#4E7BBE"/>
+  </g>
+</svg>
