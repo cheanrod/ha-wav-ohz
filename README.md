@@ -92,3 +92,8 @@ fixed price to your water source in the Energy dashboard.
 Not affiliated with or endorsed by the WAV Osterholz. Fees are provided without
 warranty — the authoritative source is the WAV's own published
 [Gebührenübersicht](https://wav-osterholz.de/gebuehren/) and its statutes.
+
+## License
+
+[MIT](LICENSE). Covers this integration's code only — the fee figures it reads
+are published by the WAV and are not part of this license.
